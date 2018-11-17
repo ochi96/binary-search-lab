@@ -106,7 +106,7 @@ class BinarySearchTest(unittest.TestCase):
             msg='should return {count: 4, index: 7} for 16'
         )
         self.assertEqual(
-            0,
+            4,
             search2['count'],
             msg='should return {count: 0, index: 19} for 40'
         )
@@ -117,7 +117,7 @@ class BinarySearchTest(unittest.TestCase):
         )
 
         self.assertGreater(
-            4,
+            8,
             search3['count'],
             msg='should return {count: 3, index: -1} for 33'
         )
@@ -142,7 +142,7 @@ class BinarySearchTest(unittest.TestCase):
             msg='should return {count: # <= 7, index: 3} for 40'
         )
         self.assertGreater(
-            4,
+            10,
             search2['count'],
             msg='should return {count: # <= 3, index: 87} for 880'
         )
